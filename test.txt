@@ -1,2 +1,0 @@
-
-& C:/Users/amogh/AppData/Local/Microsoft/WindowsApps/python3.9.exeUISFDX YKJSDG OOOFSDFAS DBSFAS THECOOLDBname = input()
