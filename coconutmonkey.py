@@ -1,7 +1,20 @@
+import os
+
+real_path = os.path.realpath(__file__)
 fileName =  "db.txt"
+
 
 def getSep() -> str:
     return "UISFDX YKJSDG OOOFSDFAS DBSFAS THECOOLDB"
+
+def init() -> bool:
+    try:
+        open(real_path.split("coconutmonkey.py")[0]+fileName, "x")
+        return True
+    except:
+        return False
+
+init()
 
 def addOrSetItem(key, item) -> dict:
     with open(fileName, 'a') as f:
