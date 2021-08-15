@@ -1,7 +1,5 @@
 import coconutmonkey
 
-coconutmonkey.init()
-
 name = input("Enter name")
 new = input(f"Hello {name}! Are you new? ") == "Y"
 
