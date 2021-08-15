@@ -1,8 +1,9 @@
 import coconutmonkey
-name = input("Enter name")
-new = input(f"Hello {name}! Are you new? ") == "Y"
 
 coconutmonkey.init()
+
+name = input("Enter name")
+new = input(f"Hello {name}! Are you new? ") == "Y"
 
 if new:
     n, pn = input("Enter your name: "), input("Enter your phone number: ") 

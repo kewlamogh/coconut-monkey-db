@@ -6,8 +6,12 @@ fileName =  "db.txt"
 def getSep() -> str:
     return "UISFDX YKJSDG OOOFSDFAS DBSFAS THECOOLDB"
 
-def init():
-    open(real_path.split("coconutmonkey.py")[0]+fileName, "x")
+def init() -> bool:
+    try:
+        open(real_path.split("coconutmonkey.py")[0]+fileName, "x")
+        return True
+    except:
+        return False
 
 def addOrSetItem(key, item) -> dict:
     with open(fileName, 'a') as f:
