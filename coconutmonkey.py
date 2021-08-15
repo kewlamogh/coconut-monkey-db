@@ -14,6 +14,8 @@ def getItem(key) -> any:
         for i in f:
             if (i.split(getSep())[0] == key):
                 res =  i.split(getSep())[1]
+    if (res == None):
+        raise IndexError("Invalid Key")
     return eval(res)
 
 def deleteItem(key):
