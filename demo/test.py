@@ -1,17 +1,16 @@
-import coconutmonkey
 
-coconutmonkey.fileName = "halo5rocks.txt"
+import coconutmonkey
+coconutmonkey.fileName = "phonebook.txt"
 coconutmonkey.init()
 
-name = input("Enter name")
-new = input(f"Hello {name}! Are you new? ") == "Y"
+name, phoneNumber = input("Enter the name: "), input("Enter the phone number: ")
 
-if new:
-    n, pn = name, input(input("Enter your phone number: "))
-    coconutmonkey.addOrSetItem(key = n, item = pn)
-    print('Added!')
+coconutmonkey.addOrSetItem(name, phoneNumber)
+
+wannaGet = input("Do you want to get a phone number? [Y/N]").lower() == "y" 
+
+if (wannaGet):
+    try: print(coconutmonkey.getItem(input("Enter the person's name: ")))
+    except: print("they don't exist")
 else:
-    try:
-        print(coconutmonkey.getItem(name))
-    except:
-        print("Looks like you are new!")
+    print("ok sure")
