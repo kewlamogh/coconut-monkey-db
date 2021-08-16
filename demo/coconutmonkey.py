@@ -4,7 +4,7 @@ real_path = os.path.realpath(__file__)
 fileName =  "db.txt"
 
 def getSep() -> str:
-    return "UISFDX YKJSDG OOOFSDFAS DBSFAS THECOOLDB"
+    return "<=UISFDXLYKJSDGLOOOFSDFASLBOSKDLTHECOOLDBLFAD|L1FE=>"
 
 def init() -> bool:
     try:
