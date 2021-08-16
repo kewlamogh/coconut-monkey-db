@@ -14,7 +14,6 @@ def init() -> bool:
     except:
         return False
 
-init()
 
 def addOrSetItem(key, item) -> dict:
     with open(fileName, 'a') as f:

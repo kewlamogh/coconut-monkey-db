@@ -1,4 +1,3 @@
-
 import coconutmonkey
 coconutmonkey.fileName = "phonebook.txt"
 coconutmonkey.init()
