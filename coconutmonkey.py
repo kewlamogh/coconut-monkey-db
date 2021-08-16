@@ -28,7 +28,10 @@ def getItem(key) -> any:
                 res =  i.split(getSep())[1]
     if (res == None):
         raise IndexError("Invalid Key")
-    return eval(res)
+    try:
+        return eval(res)
+    except:
+        return str(res)
 
 def deleteItem(key):
     filtered = ""
@@ -41,3 +44,10 @@ def deleteItem(key):
     with open(fileName, "w") as wr:
         wr.write(filtered)
 
+def getKeys():
+    res = []
+    with open(f"{fileName}", "r") as f:
+        for i in f:
+            if i.split(getSep())[0] not in res:
+                res.append(i.split(getSep())[0])
+    return res
