@@ -45,6 +45,9 @@ Get the item whose key is `key`, if no such item exists, it throws an `IndexErro
 ### `fileName`
 The variable `fileName` can be changed BEFORE calling the `init` function. By default, the text file that is created is called `db.txt`, but if you edit `fileName` you can change it.
 
+### `getKeys()`
+Returns a list of all keys.
+
 # Demo/Tutorial
 A basic, persistant, phonebook program. First, we have to import the central library and do some setup:
 ```py
