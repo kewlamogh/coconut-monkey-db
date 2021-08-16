@@ -9,7 +9,7 @@ def getSep() -> str:
 
 def init() -> bool:
     try:
-        open(real_path.split("coconutmonkey.py")[0]+fileName, "x")
+        open(real_path.split(f"{__name__}.py")[0]+fileName, "x")
         return True
     except:
         return False
