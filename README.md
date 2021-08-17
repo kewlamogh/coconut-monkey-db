@@ -71,7 +71,6 @@ else:
 ```
 > I couldn't find a way to add the `deleteItem` function into the tutorial/demo.
 
-To find the source code for the finished demo, go to `demo/test.py` or click [here](https://github.com/kewlamogh/coconut-monkey-db/blob/main/demo/test.py).
 
 # License:
 
